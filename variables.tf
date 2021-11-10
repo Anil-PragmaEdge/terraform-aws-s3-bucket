@@ -1,6 +1,6 @@
 variable "region" {
   description = "Controls if S3 bucket should be created"
-  default     = "us-east-1"
+  default     = true
 }
 variable "create_bucket" {
   description = "Controls if S3 bucket should be created"

@@ -7,6 +7,7 @@ resource "aws_s3_bucket" "this" {
 
   bucket        = var.bucket
   bucket_prefix = var.bucket_prefix
+  region        = var.region
 
   # hack when `null` value can't be used (eg, from terragrunt, https://github.com/gruntwork-io/terragrunt/pull/1367)
   acl = var.acl != "null" ? var.acl : null

@@ -4,7 +4,7 @@ locals {
 
 resource "aws_s3_bucket" "this" {
   count = var.create_bucket ? 1 : 0
-  region        = var.region
+
   bucket        = var.bucket
   bucket_prefix = var.bucket_prefix
 
